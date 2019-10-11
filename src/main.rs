@@ -14,7 +14,7 @@ fn main() {
 
     let res = res
         .enumerate()
-        .map(|(i, x)| (x[0] + x[1] * (-1f64).powi((i % (size / 2)) as i32)) / 2.);
+        .map(|(i, x)| (x[0] + x[1] * (-1f64).powi((i % (size)) as i32)) / 2.);
 
     println!("{:?}", arr);
     println!("{:?}", res.collect::<Vec<_>>());
