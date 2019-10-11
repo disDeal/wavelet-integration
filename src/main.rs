@@ -10,11 +10,11 @@ fn main() {
         .collect::<Vec<_>>();
 
     let size = arr.len();
-    let res = arr.chunks(2).cycle().take(size);
+    let res = arr.chunks(2).cycle().take(size).map(|x| (x[0], x[1]));
 
     let res = res.enumerate().map(|(i, x)| {
         // println!("{}: {}", i, (-1f64).powi((i / (size / 2)) as i32));
-        (x[0] + x[1] * (-1f64).powi((i / (size / 2)) as i32)) / 2.
+        (x.0 + x.1 * (-1f64).powi((i / (size / 2)) as i32)) / 2.
     });
 
     println!("{:?}", arr);
