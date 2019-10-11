@@ -1,0 +1,79 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(54, 364)">
+<g>
+<rect fill="#DD3355" height="10" width="10" x="-5" y="-130.26315789473682"/>
+<rect fill="#DD3355" height="10" width="10" x="51.666666666666664" y="-166.05263157894737"/>
+<rect fill="#DD3355" height="10" width="10" x="108.33333333333333" y="-345"/>
+<rect fill="#DD3355" height="10" width="10" x="165" y="-130.26315789473682"/>
+<rect fill="#DD3355" height="10" width="10" x="221.66666666666666" y="-130.26315789473682"/>
+<rect fill="#DD3355" height="10" width="10" x="278.3333333333333" y="-309.2105263157895"/>
+<rect fill="#DD3355" height="10" width="10" x="335" y="-309.2105263157895"/>
+<rect fill="#DD3355" height="10" width="10" x="391.6666666666667" y="-345"/>
+<rect fill="#DD3355" height="10" width="10" x="448.3333333333333" y="-237.6315789473684"/>
+<rect fill="#DD3355" height="10" width="10" x="505" y="-94.47368421052632"/>
+</g>
+<g>
+<path d="M0,-143.1579 L0,-143.1579 L56.666668,-232.63158 L113.333336,0 L170,-71.57895 L226.66667,-161.05263 L283.33334,-143.1579 L340,-196.8421 L396.66666,0 L453.33334,-322.10526 L510,-161.05263" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="113.33333333333333" x2="113.33333333333333" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="226.66666666666666" x2="226.66666666666666" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="340" x2="340" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="453.3333333333333" x2="453.3333333333333" y1="0" y2="10"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="510" y1="0" y2="0"/>
+<g>
+<text font-size="12" text-anchor="middle" x="0" y="20">
+0
+</text>
+<text font-size="12" text-anchor="middle" x="113.33333333333333" y="20">
+2
+</text>
+<text font-size="12" text-anchor="middle" x="226.66666666666666" y="20">
+4
+</text>
+<text font-size="12" text-anchor="middle" x="340" y="20">
+6
+</text>
+<text font-size="12" text-anchor="middle" x="453.3333333333333" y="20">
+8
+</text>
+</g>
+<text font-size="12" text-anchor="middle" x="255" y="30">
+Йекс
+</text>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-17.894736842105264" y2="-17.894736842105264"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-89.47368421052632" y2="-89.47368421052632"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-161.05263157894737" y2="-161.05263157894737"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-232.6315789473684" y2="-232.6315789473684"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-304.2105263157895" y2="-304.2105263157895"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
+<g>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-17.894736842105264">
+-2
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-89.47368421052632">
+0
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-161.05263157894737">
+2
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-232.6315789473684">
+4
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-304.2105263157895">
+6
+</text>
+</g>
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -30 -170)" x="-30" y="-182">
+Уигрек
+</text>
+</g>
+</g>
+</svg>
