@@ -9,16 +9,12 @@ fn main() {
         .take(10)
         .collect::<Vec<_>>();
 
-    let size = arr.len();
-    let res = arr
-        .chunks(2)
-        .cycle()
-        .take(size)
-        .map(|x| (x[0], x[1]))
-        .collect::<Vec<_>>();
-
-    let wave = |res: &Vec<(f64, f64)>, size: usize| {
-        res.iter()
+    let wave = |res: &Vec<f64>| {
+        let size = res.len();
+        arr.chunks(2)
+            .cycle()
+            .take(size)
+            .map(|x| (x[0], x[1]))
             .enumerate()
             .map(|(i, x)| {
                 let frac = (-1f64).powi((i / (size / 2)) as i32);
@@ -29,7 +25,7 @@ fn main() {
 
     // for size in (0..size / 2 - 1).map(|n| size / (2 * n)).rev() {
     // }
-    let res = wave(&res, size);
+    let res = wave(&arr);
 
     println!("{:?}", arr);
     println!("{:?}", res);
