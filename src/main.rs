@@ -44,6 +44,22 @@ fn main() {
     println!("{:?}", wave(2).collect::<Vec<_>>());
     println!("{:?}", wave(3).collect::<Vec<_>>());
 
+    let w3 = wave(2).collect::<Vec<_>>();
+
+    let t1 = w3
+        .into_iter()
+        .map(|tuple| [tuple.0, tuple.1])
+        .collect::<Vec<_>>();
+
+    println!("Flattens");
+    println!("{:?}", t1);
+
+    let f1 = t1.iter().flatten().flatten().collect::<Vec<_>>();
+    println!("{:?}", &f1);
+
+    // let f2 = f1.iter().flatten();
+    // println!("{:?}", f2);
+
     println!("Arrays:");
     println!("{:?}", arr);
     println!("{:?}", res);
