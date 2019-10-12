@@ -38,13 +38,17 @@ fn main() {
 
 fn wavelet(arr: &[f64]) -> Vec<f64> {
     let size = arr.len();
+    let mut acc = vec![0.; size];
     let mut res = vec![0.; size];
-    res.clone_from_slice(arr);
+    acc.clone_from_slice(arr);
 
-    let off = size / 2;
-    for i in (0..size / 2) {
-        res[i] = arr[2 * i] + arr[2 * i + 1];
-        res[i + off] = arr[2 * i] - arr[2 * i + 1];
+    for j in 1..size / 2 {
+        let off = size / (2 * j);
+        for i in 0..size / 2 {
+            res[i] = acc[2 * i] + acc[2 * i + 1];
+            res[i + off] = acc[2 * i] - acc[2 * i + 1];
+        }
+        acc.clone_from_slice(&res);
     }
     res.to_vec()
 }
