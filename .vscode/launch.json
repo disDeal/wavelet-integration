@@ -1,6 +1,44 @@
 {
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [{
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'wavelet-integration'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=wavelet-integration",
+                    "--package=wavelet-integration"
+                ],
+                "filter": {
+                    "name": "wavelet-integration",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'wavelet-integration'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=wavelet-integration",
+                    "--package=wavelet-integration"
+                ],
+                "filter": {
+                    "name": "wavelet-integration",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+
+
         {
             "name": "C++ Debug (gdb)",
             "type": "cppdbg",
@@ -14,13 +52,11 @@
             "externalConsole": true,
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
+            "setupCommands": [{
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            }]
         }
     ]
 }

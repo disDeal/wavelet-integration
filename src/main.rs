@@ -16,35 +16,10 @@ fn main() {
     let arr = vec![1., 2., 3., 4., 5., 6., 7., 8., 9.];
     let size = arr.len();
 
-    // let mean_div = |i: usize, arr: &[f64; 2], factor: usize| {
-    //     let frac = (-1f64).powi((i / factor) as i32);
-    //     (arr[0] + arr[1] * frac)
-    // };
-
-    let wave = |res: &Vec<f64>, step| {
-        let size = res.len();
-        let factor = size / (2 * step);
-        res.chunks_exact(2)
-            .cycle()
-            .take(size)
-            .enumerate()
-            .collect::<Vec<_>>()
-            .chunks_exact(factor)
-            .flat_map(|arr| {
-                // println!("{:?}", arr);
-                arr.iter().map(|(i, x)| {
-                    let frac = (-1f64).powi((i / factor) as i32);
-                    // println!("{}: \t{}", i, frac);
-                    (x[0] + x[1] * frac)
-                })
-            })
-            .collect::<Vec<_>>()
-    };
-
     println!("{:?}", &arr);
 
     let mut res = arr.clone();
-    for step in (1..size / 2) {
+    for step in 1..size / 2 {
         res = wave(&res, step);
         println!("{:?}", &res);
     }
@@ -62,4 +37,24 @@ fn main() {
         .y_label("Уигрек");
 
     Page::single(&view).save("wave.svg").unwrap();
+}
+
+fn wave(res: &[f64], step: usize) -> Vec<f64> {
+    let size = res.len();
+    let factor = size / (2 * step);
+    res.chunks_exact(2)
+        .cycle()
+        .take(size)
+        .enumerate()
+        .collect::<Vec<_>>()
+        .chunks_exact(factor)
+        .flat_map(|arr| {
+            // println!("{:?}", arr);
+            arr.iter().map(|(i, x)| {
+                let frac = (-1f64).powi((i / factor) as i32);
+                // println!("{}: \t{}", i, frac);
+                (x[0] + x[1] * frac)
+            })
+        })
+        .collect::<Vec<_>>()
 }
