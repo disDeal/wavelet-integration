@@ -1,31 +1,35 @@
 <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(54, 364)">
 <g>
-<path d="M0,-56.666668 L0,-56.666668 L72.85714,-85 L145.71428,-113.333336 L218.57143,-141.66667 L291.42856,-170 L364.2857,-198.33333 L437.14285,-226.66667 L510,-255" fill="none" stroke="#113355" stroke-linejoin="round" stroke-width="2"/>
+<path d="M0,-9.444445 L0,-9.444445 L63.75,-18.88889 L127.5,-28.333334 L191.25,-37.77778 L255,-47.22222 L318.75,-56.666668 L382.5,-66.111115 L446.25,-75.55556 L510,-85" fill="none" stroke="#113355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
-<path d="M0,-113.333336 L0,-113.333336 L72.85714,0 L145.71428,-340 L218.57143,0 L291.42856,-113.333336 L364.2857,0 L437.14285,-340 L510,0" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
+<path d="M0,-340 L0,-340 L63.75,0 L127.5,-340 L191.25,0 L255,-340 L318.75,0 L382.5,-340 L446.25,0" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="10"/>
-<line stroke="black" stroke-width="1" x1="145.71428571428572" x2="145.71428571428572" y1="0" y2="10"/>
-<line stroke="black" stroke-width="1" x1="291.42857142857144" x2="291.42857142857144" y1="0" y2="10"/>
-<line stroke="black" stroke-width="1" x1="437.14285714285717" x2="437.14285714285717" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="127.5" x2="127.5" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="255" x2="255" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="382.5" x2="382.5" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="510" x2="510" y1="0" y2="10"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="510" y1="0" y2="0"/>
 <g>
 <text font-size="12" text-anchor="middle" x="0" y="20">
 0
 </text>
-<text font-size="12" text-anchor="middle" x="145.71428571428572" y="20">
+<text font-size="12" text-anchor="middle" x="127.5" y="20">
 2
 </text>
-<text font-size="12" text-anchor="middle" x="291.42857142857144" y="20">
+<text font-size="12" text-anchor="middle" x="255" y="20">
 4
 </text>
-<text font-size="12" text-anchor="middle" x="437.14285714285717" y="20">
+<text font-size="12" text-anchor="middle" x="382.5" y="20">
 6
+</text>
+<text font-size="12" text-anchor="middle" x="510" y="20">
+8
 </text>
 </g>
 <text font-size="12" text-anchor="middle" x="255" y="30">
@@ -34,32 +38,24 @@
 </g>
 <g>
 <g>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-28.333333333333332" y2="-28.333333333333332"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-85" y2="-85"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-141.66666666666666" y2="-141.66666666666666"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-198.33333333333334" y2="-198.33333333333334"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-255" y2="-255"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-311.6666666666667" y2="-311.6666666666667"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="0" y2="0"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-94.44444444444444" y2="-94.44444444444444"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-188.88888888888889" y2="-188.88888888888889"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-283.3333333333333" y2="-283.3333333333333"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-28.333333333333332">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-85">
-2
-</text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-141.66666666666666">
-4
-</text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-198.33333333333334">
-6
-</text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-255">
-8
-</text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-311.6666666666667">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-94.44444444444444">
 10
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-188.88888888888889">
+20
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-283.3333333333333">
+30
 </text>
 </g>
 <text font-size="12" text-anchor="middle" transform="rotate(-90 -30 -170)" x="-30" y="-182">

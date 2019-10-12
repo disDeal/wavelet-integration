@@ -1,32 +1,42 @@
 extern crate rand;
-use rand::Rng;
+// use rand::Rng;
 
 extern crate plotlib;
 use plotlib::page::Page;
-use plotlib::repr::{Line, Scatter};
-use plotlib::style::{PointMarker, PointStyle};
+use plotlib::repr::Line;
 use plotlib::view::ContinuousView;
 
 fn main() {
-    let mut rng = rand::thread_rng();
-    let arr = (0..)
-        .map(|_x| rng.gen_range(0, 10))
-        .map(f64::from)
-        .take(10)
-        .collect::<Vec<_>>();
-    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8.];
+    // let mut rng = rand::thread_rng();
+    // let arr = (0..)
+    //     .map(|_x| rng.gen_range(0, 10))
+    //     .map(f64::from)
+    //     .take(10)
+    //     .collect::<Vec<_>>();
+    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8., 9.];
     let size = arr.len();
+
+    // let mean_div = |i: usize, arr: &[f64; 2], factor: usize| {
+    //     let frac = (-1f64).powi((i / factor) as i32);
+    //     (arr[0] + arr[1] * frac)
+    // };
 
     let wave = |res: &Vec<f64>, step| {
         let size = res.len();
-        arr.chunks(2)
+        let factor = size / (2 * step);
+        res.chunks_exact(2)
             .cycle()
             .take(size)
-            .map(|x| (x[0], x[1]))
             .enumerate()
-            .map(|(i, x)| {
-                let frac = (-1f64).powi((i / (size / (2 * step))) as i32);
-                (x.0 + x.1 * frac)
+            .collect::<Vec<_>>()
+            .chunks_exact(factor)
+            .flat_map(|arr| {
+                // println!("{:?}", arr);
+                arr.iter().map(|(i, x)| {
+                    let frac = (-1f64).powi((i / factor) as i32);
+                    // println!("{}: \t{}", i, frac);
+                    (x[0] + x[1] * frac)
+                })
             })
             .collect::<Vec<_>>()
     };
