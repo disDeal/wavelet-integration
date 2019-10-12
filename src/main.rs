@@ -45,8 +45,27 @@ fn wavelet(arr: &[f64]) -> Vec<f64> {
     for j in 1..size / 2 {
         let off = size / (2 * j);
         for i in 0..size / 2 {
-            res[i] = acc[2 * i] + acc[2 * i + 1];
-            res[i + off] = acc[2 * i] - acc[2 * i + 1];
+            let factor = i / off;
+            res[i + off * factor] = acc[2 * i] + acc[2 * i + 1];
+            res[i + off * factor + off] = acc[2 * i] - acc[2 * i + 1];
+        }
+        acc.clone_from_slice(&res);
+    }
+    res.to_vec()
+}
+
+fn wavelet_rev(arr: &[f64]) -> Vec<f64> {
+    let size = arr.len();
+    let mut acc = vec![0.; size];
+    let mut res = vec![0.; size];
+    acc.clone_from_slice(arr);
+
+    for j in 1..size / 2 {
+        let off = size / (2 * j);
+        for i in 0..size / 2 {
+            let factor = i / off;
+            res[i + off * factor] = acc[2 * i] + acc[2 * i + 1];
+            res[i + off * factor + off] = acc[2 * i] - acc[2 * i + 1];
         }
         acc.clone_from_slice(&res);
     }

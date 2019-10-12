@@ -1,10 +1,10 @@
 <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(54, 364)">
 <g>
-<path d="M0,-42.5 L0,-42.5 L72.85714,-51 L145.71428,-59.5 L218.57143,-68 L291.42856,-76.5 L364.2857,-85 L437.14285,-93.5 L510,-102" fill="none" stroke="#113355" stroke-linejoin="round" stroke-width="2"/>
+<path d="M0,-111.15385 L0,-111.15385 L72.85714,-117.69231 L145.71428,-124.23077 L218.57143,-130.76923 L291.42856,-137.3077 L364.2857,-143.84616 L437.14285,-150.38461 L510,-156.92308" fill="none" stroke="#113355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
-<path d="M0,-340 L0,-340 L72.85714,0 L145.71428,-34 L218.57143,-17 L291.42856,-34 L364.2857,-34 L437.14285,-25.5 L510,-25.5" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
+<path d="M0,-340 L0,-340 L72.85714,0 L145.71428,-52.307693 L218.57143,-104.61539 L291.42856,-78.46154 L364.2857,-104.61539 L437.14285,-104.61539 L510,-104.61539" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
 <g>
@@ -34,23 +34,27 @@
 </g>
 <g>
 <g>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-34" y2="-34"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-119" y2="-119"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-204" y2="-204"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-289" y2="-289"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-39.23076923076923" y2="-39.23076923076923"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-104.61538461538461" y2="-104.61538461538461"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-170" y2="-170"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-235.3846153846154" y2="-235.3846153846154"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-300.7692307692308" y2="-300.7692307692308"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-34">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-39.23076923076923">
+-10
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-104.61538461538461">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-119">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-170">
 10
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-204">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-235.3846153846154">
 20
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-289">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-300.7692307692308">
 30
 </text>
 </g>
