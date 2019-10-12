@@ -13,10 +13,13 @@ fn main() {
     //     .map(f64::from)
     //     .take(10)
     //     .collect::<Vec<_>>();
-    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8., 9f64];
+    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8.];
     let size = arr.len();
 
-    let res = arr.clone();
+    let res = wavelet(&arr);
+
+    println!("{:?}", arr);
+    println!("{:?}", res);
 
     let data = (0..size).map(|x| x as f64).zip(arr).collect::<Vec<_>>();
     let l1: Line = Line::new(data).style(plotlib::style::LineStyle::new().colour("#113355"));
@@ -31,4 +34,17 @@ fn main() {
         .y_label("Уигрек");
 
     Page::single(&view).save("wave.svg").unwrap();
+}
+
+fn wavelet(arr: &[f64]) -> Vec<f64> {
+    let size = arr.len();
+    let mut res = vec![0.; size];
+    res.clone_from_slice(arr);
+
+    let off = size / 2;
+    for i in (0..size / 2) {
+        res[i] = arr[2 * i] + arr[2 * i + 1];
+        res[i + off] = arr[2 * i] - arr[2 * i + 1];
+    }
+    res.to_vec()
 }
