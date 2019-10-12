@@ -13,41 +13,40 @@ fn main() {
     //     .map(f64::from)
     //     .take(10)
     //     .collect::<Vec<_>>();
-    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8., 9.];
+    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8., 9f64];
     let size = arr.len();
 
-    // let mean_div = |i: usize, arr: &[f64; 2], factor: usize| {
-    //     let frac = (-1f64).powi((i / factor) as i32);
-    //     (arr[0] + arr[1] * frac)
-    // };
+    let res = arr.clone();
+    let factor = |n: usize| size / (2 * n);
+    let mean = |x: &[f64]| x[0] + x[1];
+    let div = |x: &[f64]| x[0] - x[1];
 
-    let wave = |res: &Vec<f64>, step| {
-        let size = res.len();
-        let factor = size / (2 * step);
-        res.chunks_exact(2)
-            .cycle()
-            .take(size)
-            .enumerate()
-            .collect::<Vec<_>>()
-            .chunks_exact(factor)
-            .flat_map(|arr| {
-                // println!("{:?}", arr);
-                arr.iter().map(|(i, x)| {
-                    let frac = (-1f64).powi((i / factor) as i32);
-                    // println!("{}: \t{}", i, frac);
-                    (x[0] + x[1] * frac)
-                })
-            })
-            .collect::<Vec<_>>()
+    println!("Pairs:");
+    let pairs = res.chunks_exact(2).collect::<Vec<_>>();
+    println!("{:?}", pairs);
+
+    let group = |n: usize| pairs.chunks_exact(factor(n));
+
+    println!("Groups:");
+    println!("{:?}", group(1).collect::<Vec<_>>());
+    println!("{:?}", group(2).collect::<Vec<_>>());
+    println!("{:?}", group(3).collect::<Vec<_>>());
+
+    let wave = |n| {
+        let m = group(n).map(|arr| arr.iter().map(|x| mean(x)).collect::<Vec<_>>());
+        let d = group(n).map(|arr| arr.iter().map(|x| div(x)).collect::<Vec<_>>());
+
+        m.zip(d)
     };
 
-    println!("{:?}", &arr);
+    println!("Zips:");
+    println!("{:?}", wave(1).collect::<Vec<_>>());
+    println!("{:?}", wave(2).collect::<Vec<_>>());
+    println!("{:?}", wave(3).collect::<Vec<_>>());
 
-    let mut res = arr.clone();
-    for step in (1..size / 2) {
-        res = wave(&res, step);
-        println!("{:?}", &res);
-    }
+    println!("Arrays:");
+    println!("{:?}", arr);
+    println!("{:?}", res);
 
     let data = (0..size).map(|x| x as f64).zip(arr).collect::<Vec<_>>();
     let l1: Line = Line::new(data).style(plotlib::style::LineStyle::new().colour("#113355"));
