@@ -7,6 +7,16 @@
 <path d="M0,-191.25 L0,-191.25 L72.85714,-85 L145.71428,-42.5 L218.57143,0 L291.42856,-21.25 L364.2857,0 L437.14285,0 L510,0" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
+<rect fill="#DD3355" height="10" width="10" x="-5" y="-47.5"/>
+<rect fill="#DD3355" height="10" width="10" x="67.85714285714286" y="-90"/>
+<rect fill="#DD3355" height="10" width="10" x="140.71428571428572" y="-132.5"/>
+<rect fill="#DD3355" height="10" width="10" x="213.57142857142858" y="-175"/>
+<rect fill="#DD3355" height="10" width="10" x="286.42857142857144" y="-217.5"/>
+<rect fill="#DD3355" height="10" width="10" x="359.2857142857143" y="-260"/>
+<rect fill="#DD3355" height="10" width="10" x="432.14285714285717" y="-302.5"/>
+<rect fill="#DD3355" height="10" width="10" x="505" y="-345"/>
+</g>
+<g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="10"/>
 <line stroke="black" stroke-width="1" x1="145.71428571428572" x2="145.71428571428572" y1="0" y2="10"/>

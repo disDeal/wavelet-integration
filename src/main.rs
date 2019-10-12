@@ -1,18 +1,19 @@
 extern crate rand;
-// use rand::Rng;
+use rand::Rng;
 
 extern crate plotlib;
 use plotlib::page::Page;
-use plotlib::repr::Line;
+use plotlib::repr::{Line, Scatter};
+use plotlib::style::{PointMarker, PointStyle};
 use plotlib::view::ContinuousView;
 
 fn main() {
-    // let mut rng = rand::thread_rng();
-    // let arr = (0..)
-    //     .map(|_x| rng.gen_range(0, 10))
-    //     .map(f64::from)
-    //     .take(10)
-    //     .collect::<Vec<_>>();
+    let mut rng = rand::thread_rng();
+    let arr = (0..)
+        .map(|_x| rng.gen_range(0, 10))
+        .map(f64::from)
+        .take(100)
+        .collect::<Vec<_>>();
     let arr = vec![1., 2., 3., 4., 5., 6., 7., 8.];
     let size = arr.len();
 
@@ -29,9 +30,16 @@ fn main() {
     let data = (0..size).map(|x| x as f64).zip(res).collect::<Vec<_>>();
     let l2: Line = Line::new(data).style(plotlib::style::LineStyle::new().colour("#DD3355"));
 
+    let data = (0..size).map(|x| x as f64).zip(rev).collect::<Vec<_>>();
+    let s1: Scatter = Scatter::from_slice(&data.as_slice()).style(
+        PointStyle::new()
+            .marker(PointMarker::Square)
+            .colour("#DD3355"),
+    );
     let view = ContinuousView::new()
         .add(l1)
         .add(l2)
+        .add(s1)
         .x_label("Йекс")
         .y_label("Уигрек");
 
