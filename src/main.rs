@@ -17,9 +17,11 @@ fn main() {
     let size = arr.len();
 
     let res = wavelet(&arr);
+    let rev = wavelet_rev(&res);
 
     println!("{:?}", arr);
     println!("{:?}", res);
+    println!("{:?}", rev);
 
     let data = (0..size).map(|x| x as f64).zip(arr).collect::<Vec<_>>();
     let l1: Line = Line::new(data).style(plotlib::style::LineStyle::new().colour("#113355"));
@@ -46,8 +48,8 @@ fn wavelet(arr: &[f64]) -> Vec<f64> {
         let off = size / (2 * j);
         for i in 0..size / 2 {
             let factor = i / off;
-            res[i + off * factor] = acc[2 * i] + acc[2 * i + 1];
-            res[i + off * factor + off] = acc[2 * i] - acc[2 * i + 1];
+            res[i + off * factor] = (acc[2 * i] + acc[2 * i + 1]) / 2.;
+            res[i + off * factor + off] = (acc[2 * i + 1] - acc[2 * i]) / 2.;
         }
         acc.clone_from_slice(&res);
     }
@@ -64,8 +66,8 @@ fn wavelet_rev(arr: &[f64]) -> Vec<f64> {
         let off = size / (2 * j);
         for i in 0..size / 2 {
             let factor = i / off;
-            res[i + off * factor] = acc[2 * i] + acc[2 * i + 1];
-            res[i + off * factor + off] = acc[2 * i] - acc[2 * i + 1];
+            res[i + off * factor] = acc[2 * i] - acc[2 * i + 1];
+            res[i + off * factor + off] = acc[2 * i] + acc[2 * i + 1];
         }
         acc.clone_from_slice(&res);
     }
