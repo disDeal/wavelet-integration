@@ -14,6 +14,7 @@ fn main() {
         .map(f64::from)
         .take(10)
         .collect::<Vec<_>>();
+    let arr = vec![1., 2., 3., 4., 5., 6., 7., 8.];
     let size = arr.len();
 
     let wave = |res: &Vec<f64>, step| {
@@ -24,32 +25,28 @@ fn main() {
             .map(|x| (x[0], x[1]))
             .enumerate()
             .map(|(i, x)| {
-                let frac = (-1f64).powi((i / (step / 2)) as i32);
-                (x.0 + x.1 * frac) / 2.
+                let frac = (-1f64).powi((i / (size / (2 * step))) as i32);
+                (x.0 + x.1 * frac)
             })
             .collect::<Vec<_>>()
     };
 
-    let mut res = arr.clone();
-    for step in (1..size / 2).map(|n| size / (2 * n)).rev() {}
-    res = wave(&res, size / 2);
-
     println!("{:?}", &arr);
-    println!("{:?}", &res);
 
-    let size = arr.len();
+    let mut res = arr.clone();
+    for step in (1..size / 2) {
+        res = wave(&res, step);
+        println!("{:?}", &res);
+    }
+
     let data = (0..size).map(|x| x as f64).zip(arr).collect::<Vec<_>>();
-    let s2: Scatter = Scatter::from_slice(data.as_slice()).style(
-        PointStyle::new()
-            .marker(PointMarker::Square)
-            .colour("#DD3355"),
-    );
+    let l1: Line = Line::new(data).style(plotlib::style::LineStyle::new().colour("#113355"));
 
     let data = (0..size).map(|x| x as f64).zip(res).collect::<Vec<_>>();
     let l2: Line = Line::new(data).style(plotlib::style::LineStyle::new().colour("#DD3355"));
 
     let view = ContinuousView::new()
-        .add(s2)
+        .add(l1)
         .add(l2)
         .x_label("Йекс")
         .y_label("Уигрек");
