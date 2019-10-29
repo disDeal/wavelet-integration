@@ -30,3 +30,7 @@ Inverse  transformation:
 [5.0, 4.0, 0.0, 7.0, 6.0, 8.0, 7.0, 3.0]
 ```
 ![random](./wave2.svg)
+
+Smoothing
+![random](./wave3.svg)
+
