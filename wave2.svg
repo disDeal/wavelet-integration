@@ -1,20 +1,20 @@
 <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(54, 364)">
 <g>
-<path d="M0,-340 L0,-340 L72.85714,-309.77777 L145.71428,-68 L218.57143,-219.11111 L291.42856,-128.44444 L364.2857,-249.33333 L437.14285,-309.77777 L510,-68" fill="none" stroke="#113355" stroke-linejoin="round" stroke-width="2"/>
+<path d="M0,-150.23256 L0,-150.23256 L72.85714,-340 L145.71428,-276.74417 L218.57143,-150.23256 L291.42856,-118.60465 L364.2857,-213.48837 L437.14285,-245.11627 L510,-213.48837" fill="none" stroke="#113355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
-<path d="M0,-211.55556 L0,-211.55556 L72.85714,-45.333332 L145.71428,-22.666666 L218.57143,-113.333336 L291.42856,-68 L364.2857,-37.77778 L437.14285,-45.333332 L510,0" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
+<path d="M0,-213.48837 L0,-213.48837 L72.85714,-39.534885 L145.71428,-63.255814 L218.57143,-79.06977 L291.42856,-71.16279 L364.2857,-55.34884 L437.14285,0 L510,-79.06977" fill="none" stroke="#DD3355" stroke-linejoin="round" stroke-width="2"/>
 </g>
 <g>
-<rect fill="#DD3355" height="10" width="10" x="-5" y="-345"/>
-<rect fill="#DD3355" height="10" width="10" x="67.85714285714286" y="-314.77777777777777"/>
-<rect fill="#DD3355" height="10" width="10" x="140.71428571428572" y="-73"/>
-<rect fill="#DD3355" height="10" width="10" x="213.57142857142858" y="-224.11111111111111"/>
-<rect fill="#DD3355" height="10" width="10" x="286.42857142857144" y="-133.44444444444446"/>
-<rect fill="#DD3355" height="10" width="10" x="359.2857142857143" y="-254.33333333333334"/>
-<rect fill="#DD3355" height="10" width="10" x="432.14285714285717" y="-314.77777777777777"/>
-<rect fill="#DD3355" height="10" width="10" x="505" y="-73"/>
+<rect fill="#DD3355" height="10" width="10" x="-5" y="-155.2325581395349"/>
+<rect fill="#DD3355" height="10" width="10" x="67.85714285714286" y="-345"/>
+<rect fill="#DD3355" height="10" width="10" x="140.71428571428572" y="-281.74418604651163"/>
+<rect fill="#DD3355" height="10" width="10" x="213.57142857142858" y="-155.2325581395349"/>
+<rect fill="#DD3355" height="10" width="10" x="286.42857142857144" y="-123.6046511627907"/>
+<rect fill="#DD3355" height="10" width="10" x="359.2857142857143" y="-218.48837209302326"/>
+<rect fill="#DD3355" height="10" width="10" x="432.14285714285717" y="-250.11627906976744"/>
+<rect fill="#DD3355" height="10" width="10" x="505" y="-218.48837209302326"/>
 </g>
 <g>
 <g>
@@ -44,31 +44,27 @@
 </g>
 <g>
 <g>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-7.555555555555555" y2="-7.555555555555555"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-68" y2="-68"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-128.44444444444446" y2="-128.44444444444446"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-188.88888888888889" y2="-188.88888888888889"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-249.33333333333334" y2="-249.33333333333334"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-309.77777777777777" y2="-309.77777777777777"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-55.348837209302324" y2="-55.348837209302324"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-118.6046511627907" y2="-118.6046511627907"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-181.86046511627907" y2="-181.86046511627907"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-245.11627906976744" y2="-245.11627906976744"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-308.3720930232558" y2="-308.3720930232558"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-7.555555555555555">
--2
-</text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-68">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-55.348837209302324">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-128.44444444444446">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-118.6046511627907">
 2
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-188.88888888888889">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-181.86046511627907">
 4
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-249.33333333333334">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-245.11627906976744">
 6
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-309.77777777777777">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-308.3720930232558">
 8
 </text>
 </g>

@@ -21,7 +21,11 @@ fn main() {
     println!("{:?}", arr);
 
     println!("Straight transformation:");
-    let res = wavelet(&arr);
+    let mut res = wavelet(&arr);
+
+    // for i in size / 2..size {
+    //     res[i] = 0.;
+    // }
 
     println!("Inverse  transformation:");
     let rev = wavelet_rev(&res);

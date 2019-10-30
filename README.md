@@ -34,3 +34,5 @@ Inverse  transformation:
 Smoothing
 ![random](./wave3.svg)
 
+![random](./wave4.svg)
+
